@@ -1,0 +1,7 @@
+.session__title::after{
+    content: '';
+    display: block;
+    width: 33px;
+    height: 4px;
+    background-color: #998750;
+}

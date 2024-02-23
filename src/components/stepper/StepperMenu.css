@@ -1,0 +1,51 @@
+.animate__animated {
+  animation-duration: 500ms;
+  animation-fill-mode: both;
+}
+.delay__entrance {
+  animation-delay: 0s;
+  animation-name: delay;
+  opacity: 0;
+}
+
+.animate__slideOutLeft {
+  z-index: 1;
+
+  animation-name: slideOutLeft;
+}
+.animate__slideOutRight {
+  z-index: 1;
+
+  animation-name: slideOutRight;
+}
+
+@keyframes delay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes slideOutLeft {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    transform: translate3d(-100%, 0, 0);
+    opacity: 0;
+  }
+}
+@keyframes slideOutRight {
+  from {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+  to {
+    visibility: hidden;
+    transform: translate3d(100%, 0, 0);
+    opacity: 0;
+  }
+}
