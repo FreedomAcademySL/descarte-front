@@ -1,5 +1,6 @@
 import { LngParamProps, fallbackLng, languages } from '@/app/i18n';
-import { DashboardEcommerce } from '@/components';
+import React from 'react';
+
 
 export default async function Page({
   params,
